@@ -1,0 +1,402 @@
+*{
+    margin:0px;                  /*no previous margin will appear on screen altough not important*/
+    font-family: Arial, Helvetica, sans-serif ;
+    border:border-box;       /*(refer recorder) altough not important*/
+}
+.background{
+    height:700px;
+    background:rgba(0,0,0,0.7)url(netflix_background.jpg);
+    background-size: cover;
+    background-blend-mode:darken;                                                                  /* to make the background DARKEN */
+     border-image:fill 0 linear-gradient(rgba(0, 0, 0, 0.227),#00000073);      /*to add some darkness at the corners */
+}
+/*HEADER*/
+.header{
+    width:960px;
+    height:44px;
+    margin:0px 245px;
+   padding:30px 60px;
+   display:flex;
+}
+         /*LOGO*/
+.logo-outer{
+    width:310px;
+    height:40px;
+    margin:8px 0px 0px 16px;
+}
+.logo{
+    width:150px;
+    height:40px;
+    background-image: url(logo.png);
+    background-size: cover;
+}
+         /*PANEL*/
+.panel{
+    width:660px ;
+    height:40px ;
+    margin:8px 16px 0px 0px;
+    display:flex;   
+}
+/*language*/
+.select-container{
+    display:flex;
+    justify-content: center ;
+    width: 128px;
+    height: 42px;
+    position: relative;         /*to act as parent container for it's content*/
+}
+.select-box{
+    width: 100%;
+    background-color: transparent;
+    color:white;
+    appearance: none;            /*that now all by default properties willl be removed and we can customize it by our choice*/
+    padding:0px 20px 0px 40px;
+    font-size:16px;
+    border:0.5px solid white;
+    border-radius:5px;
+}
+.icon-container{
+    width:40px;
+    height:100%;
+    left:0;           /*use to add the element on left edge of its containing element*/
+    display: flex;
+    position: absolute;            /*add the element in it's nearest parent container*/
+    justify-content: center;
+    align-items: center;
+}
+.icon-container2{
+    width:25px;
+    height:100%;
+    right:0;           /*use to add th element on right edge of its containing element*/
+    display: flex;
+    position: absolute;           /*add the element in it's nearest parent container*/
+    justify-content: center;
+    align-items: center;
+}
+/*sign in*/
+.signin{
+    width: 80px;
+    height: 41px;
+    background-color: red;
+    border-radius: 5px;
+    margin-left:30px ;
+    font-weight:500;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;  
+}
+
+         /*MAIN*/
+
+.content{
+    width: 880px;
+    height: 240px;
+    margin-top: 180px;
+    margin-left: 360px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*line1*/
+.line1{
+    color:white;
+    font-size: 48px;
+    font-weight: 545;
+}
+/*line2*/
+.line2{
+    color:white;
+    font-size: 24px; 
+}
+/*line3*/
+.line3{
+    color:white;
+    font-size:20px;
+}
+/*line4*/
+.line4{
+    width:590px;
+    height:56px;
+    display:flex;
+    justify-content: space-between;
+}
+/*input*/
+.input{
+    width:360px;
+    height:56px;
+    border:1px solid white;
+    background-color: transparent;
+    font-size: 18px;
+}
+/*button*/
+.button{
+    background-color: red;
+    color:white;
+    width:200px;
+    height:65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:25px;
+}
+
+/*FOOTER*/
+
+/*Footer1*/
+.footer1{
+    height:510px;
+    background-color: black;
+    border-top:10px solid rgba(128, 128, 128, 0.299);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f1-content{
+    width:1050px;
+    height:360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Lines*/
+.f1-lines{
+    width:480px;
+    height:200px;
+}
+.a{
+    font-size: 48px;
+}
+.b{
+    margin-top:18px;
+    font-size:24px;
+}
+.c{
+    margin-top:5px;
+    font-size:24px;
+}
+.d{
+    margin-top:5px;
+    font-size:24px;
+}
+/*Image*/
+.f1-imagefolder{
+    width:480px;
+    height:355px;
+}
+.f1-image{
+    width:480px;
+    height:355px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-image: url(footer1.png);
+    background-size: cover;
+}
+
+    /*Footer2*/
+.footer2{
+        height:510px;
+        background-color: black;
+        border-top:10px solid rgba(128, 128, 128, 0.299);
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.f2-content{
+        width:1400px;
+        height:360px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+/*image*/
+.f2-imagefolder{
+    width:300px;
+    height:355px;
+    position: static;                    /*to keep image on its place */
+}   
+.f2-image{
+    width:300px;
+    height:355px;
+    background-image: url(footer2.png);
+    background-size: contain;
+    background-repeat: none;
+}
+/*lines*/
+.f2-lines{
+    width:500px;
+    height:285px;
+}
+.e{
+    font-size: 48px;
+}
+.f{
+    font-size: 48px;
+}
+.g{
+    font-size: 48px;
+}
+.h{
+    margin-top:12px;
+    font-size: 24px;
+}
+.i{
+    margin-top:7px;
+    font-size: 24px;
+}
+
+/*FOOTER3*/
+.footer3{
+    height:930px;
+    background-color: black;
+    border-top:10px solid rgba(128, 128, 128, 0.299);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.f3-content{
+    height:787px;
+    width:960px;
+}
+.f3-heading{                 /*first row*/
+    height:65px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bolder;
+    font-size:48px;
+}
+.rows{
+    height:84px;
+    background-color:rgba(128, 128, 128, 0.299) ;
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rows-part{               /*place in which text and logo are written*/
+    height:28px;
+    width:850px;
+    display:flex;
+    justify-content: space-between;
+}
+.text{
+    width:360px;
+    height:25px;
+    color:#ffffff;
+    font-size: 24px;
+}
+.logofooter{
+        width:30px;
+        height:30px;
+        color:#ffffff;
+        font-size: 28px;
+}
+.f3-lowerpanel{
+    width:898px;
+    height:120px;
+    margin-top:50px;
+    margin-left:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f3-line3{
+        color:white;
+        font-size:20px;
+}
+.f4-line4{
+    width:590px;
+    height:56px;
+    display:flex;
+    justify-content: space-between;
+}
+
+/*FOOTER4*/
+.footer4{
+    height:390px;
+    background-color: black;
+    border-top:10px solid rgba(128, 128, 128, 0.299);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f4-content{
+    width:960px;
+    height:270px;
+    display:flex;
+    flex-direction: column;
+    color:#ffffffb3;
+}
+.f4-line1{
+  width:260px;
+  height:22px;
+}
+.f4-line2{
+    width:100%;
+    height:138px;
+    display: flex;
+}
+select-container{
+    display:flex;
+    justify-content: center ;
+    width: 128px;
+    height: 42px;
+    position: relative;         /*to act as parent container for it's content*/
+}
+.select-box{
+    width: 100%;
+    background-color: transparent;
+    color:white;
+    appearance: none;            /*that now all by default properties willl be removed and we can customize it by our choice*/
+    padding:0px 20px 0px 40px;
+    font-size:16px;
+    border:0.5px solid white;
+    border-radius:5px;
+}
+.icon-container{
+    width:40px;
+    height:100%;
+    left:0;           /*use to add the element on left edge of its containing element*/
+    display: flex;
+    position: absolute;            /*add the element in it's nearest parent container*/
+    justify-content: center;
+    align-items: center;
+}
+.icon-container2{
+    width:25px;
+    height:100%;
+    right:0;           /*use to add the element on right edge of its containing element*/
+    display: flex;
+    position: absolute;           /*add the element in it's nearest parent container*/
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    line-height: 0.95cm;
+    margin-left:-35px;             /*negative values work oppositely*/
+}
+li{
+    list-style-type: none;
+    text-decoration: underline;
+}
+.list{
+    margin-left: 60px;              /*to give the margin to 2,3,&4 list from left side*/
+}
+.row{
+    margin-top: 15px;   /*used for 4 lines of content box*/
+}
+
+/* making buttons hoverable*/
+
+.button:hover{
+    background-color: rgb(173, 27, 27);
+}
+.signin:hover{
+    background-color: rgb(173, 27, 27);
+}
